@@ -104,12 +104,16 @@ function getDates() {
   return ["17.06", "18.06", "19.06", "20.06"];
 }
 
+var myChart;
+
 function drawBarChart(playerId, playerName) {
   var ctx = document.getElementById("myChart");
+  var playerNameElement = document.getElementById("player-name");
+  playerNameElement.innerHTML = playerName;
   var data = [];
   data = getPlayerData(playerId);
 
-  var myChart = new Chart(ctx, {
+  myChart = new Chart(ctx, {
     type: "bar",
     data: {
       labels: getDates(),
@@ -159,8 +163,11 @@ document.onreadystatechange = () => {
   if (document.readyState === "complete") {
     // document ready
     var playerSelect = document.getElementById("player-select");
+
     drawBarChart("albert", "Albert Guðmundsson");
+
     playerSelect.addEventListener("change", event => {
+      myChart.destroy();
       drawBarChart(
         event.target.value,
         event.target.options[event.target.selectedIndex].text
