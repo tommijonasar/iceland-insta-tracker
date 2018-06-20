@@ -1,0 +1,16 @@
+  <!--
+
+  console.log(document.querySelectorAll("span.g47SY")[1].title.replace(/,/, ''));
+  document.querySelectorAll("span.g47SY")[1].title.replace(/,/, '')
+  https://codepen.io/flopreynat/pen/BfLkA
+  -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-121089176-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121089176-1');
+</script-->	
