@@ -3,30 +3,54 @@
 
 <head>
   <title>Team Iceland Instagram Tracker</title>
-</head>
-<!-- <link rel="stylesheet" href="css/style.css" /> -->
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<style>
-  body {
-    background-color: #E1EFF6;
-    font-family: 'Roboto', sans-serif;
-  }
 
-  select {
-    height: calc(2.95rem + 2px);
-    display: block;
-    width: 25%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 2.2;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 10px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-</style>
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E1EFF6;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    select {
+      height: calc(2.95rem + 2px);
+      display: block;
+      width: 25%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 2.2;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+
+
+    .alert {
+      padding: .75rem 1.25rem;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      background-color: #dff0d8;
+      border-color: #d0e9c6;
+      color: #3c763d;
+      font-size: 0.75rem;
+      margin: 0.375rem 0.75rem;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121089176-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121089176-1');
+  </script>
+</head>
 
 <body>
   <script src="main.js?ver=1"></script>
@@ -61,7 +85,35 @@
   <div class="chart-container" style="position: relative; width:100%; height:80%;">
     <canvas id="myChart"></canvas>
   </div>
-  
+
+  <div class="alert">
+    <ul>
+      <li>
+        Eftir að fylgjendafjöldi Rúriks Gíslasonar á Instagram jókst stjarnfræðilega eftir leikinn við Argentínu á HM fannst mér
+        áhugavert að skoða hvernig hinum strákunum í liðinu gengi í söfnun fylgjenda. Mér datt því í hug að skrá niður hvað
+        hver og einn þeirra er með marga fylgjendur og henda upp mjög óvísindalegri síðu til að sjá niðurstöðurnar.
+      </li>
+      <li>
+        Fyrstu tölur er frá kvöldi 17. júní, hefði verið betra að byrja á þessu fyrir HM, viðurkenni það...
+      </li>
+      <li>
+        Til að sjá nákvæman fjölda fylgjenda er hægt að smella á einstaka súlu.
+      </li>
+      <li>
+        Það getur vel verið að það sé hægt að sjá þessar tölur og þróun þeirra á einhverri frábærri síðu ég bara fann það ekki og
+        notaði tækifærið til að leika mér.
+      </li>
+      <li>
+        Tölurnar hjá Birni Bergmann fóru í eitthvað rugl fyrstu dagana, þannig að það er ekkert að marka þær!
+      </li>
+    </ul>
+
+    <a href="https://twitter.com/tommijonasar?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @tommijonasar</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </div>
+
+
 </body>
 
 
