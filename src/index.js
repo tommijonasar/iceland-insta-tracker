@@ -110,8 +110,15 @@ function drawBarChart(playerId, playerName) {
   var ctx = document.getElementById("myChart");
   var playerNameElement = document.getElementById("player-name");
   playerNameElement.innerHTML = playerName;
+  var playerFollowersElement = document.getElementById("follower-count");
+  var playerPercentageElement = document.getElementById("percentage-jump");
   var data = [];
   data = getPlayerData(playerId);
+
+  playerFollowersElement.innerHTML = data[data.length - 1];
+  var increase = data[data.length - 1] - data[data.length - 2];
+  var percentage = ((increase / data[data.length - 2]) * 100).toFixed(2);
+  playerPercentageElement.innerHTML = "+" + percentage + "%";
 
   myChart = new Chart(ctx, {
     type: "bar",

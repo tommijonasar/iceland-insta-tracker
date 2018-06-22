@@ -39,6 +39,10 @@
       font-size: 0.75rem;
       margin: 0.375rem 0.75rem;
     }
+
+    #percentage-jump {
+      color: #38ab13;
+    }
   </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -53,8 +57,16 @@
 </head>
 
 <body>
-  <script src="main.js?ver=2"></script>
-  <h1 id="player-name">Albert Guðmundsson</h1>
+  <script src="main.js?ver=3"></script>
+  <h1>
+    <span id="player-name">Albert Guðmundsson</span>
+    <span> - </span>
+    <span id="follower-count"></span>
+    <span> followers</span>
+    <span> / </span>
+    <span id="percentage-jump"></span>
+    <span> since yesterday</span>
+  </h1>
   <select id="player-select">
     <option value="">Select player</option>
     <option value="albert">Albert Guðmundsson</option>
