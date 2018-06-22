@@ -12,6 +12,16 @@
       font-family: 'Roboto', sans-serif;
     }
 
+    h1 {
+      margin-top: 0.67em;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     select {
       height: calc(2.95rem + 2px);
       display: block;
@@ -43,6 +53,10 @@
     #percentage-jump {
       color: #38ab13;
     }
+
+    .negative#percentage-jump {
+      color: #A10702;
+    }
   </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -57,7 +71,7 @@
 </head>
 
 <body>
-  <script src="main.js?ver=4"></script>
+  <script src="main.js?ver=5"></script>
   <h1>
     <span id="player-name">Albert Guðmundsson</span>
     <span> - </span>
@@ -67,6 +81,7 @@
     <span id="percentage-jump"></span>
     <span> since yesterday</span>
   </h1>
+  <h3>Data updated @ 22.06.2018 23:00</h3>
   <select id="player-select">
     <option value="">Select player</option>
     <option value="albert">Albert Guðmundsson</option>
