@@ -1,9 +1,4 @@
-//import { GoogleCharts } from "google-charts";
 import Chart from "chart.js";
-
-//Load the charts library with a callback
-//GoogleCharts.load(drawBarChart);
-//GoogleCharts.load(drawLineChart);
 
 function getPlayerData(player) {
   // Albert
